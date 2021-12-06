@@ -22,7 +22,7 @@ void main() {
   final tNumberTrivia = NumberTrivia(number: 1, text: 'test');
 
   test(
-    'should get trivia from the repository',
+    'should get trivia from the repositories',
     () async {
       // arrange
       when(mockNumberTriviaRepository.getRandomNumberTrivia())
