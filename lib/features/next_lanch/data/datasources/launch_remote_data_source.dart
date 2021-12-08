@@ -10,7 +10,7 @@ import '../../../../core/error/exceptions.dart';
 abstract class LaunchRemoteDataSource {
   Future<NextLaunchResponse> getNextLaunch();
   Future<List<Launch>> getPastLanches();
-  Future<Launch> getSingleLaunch();
+  Future<Launch> getSingleLaunch(int id);
 }
 
 class NumberTriviaRemoteDataSourceImpl implements LaunchRemoteDataSource {
@@ -33,7 +33,7 @@ class NumberTriviaRemoteDataSourceImpl implements LaunchRemoteDataSource {
   }
 
   @override
-  Future<Launch> getSingleLaunch() {
+  Future<Launch> getSingleLaunch(int id) {
     // TODO: implement getSingleLaunch
     throw UnimplementedError();
   }

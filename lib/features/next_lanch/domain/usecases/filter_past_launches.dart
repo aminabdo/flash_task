@@ -7,10 +7,10 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
 
 
-class GetPastLaunchs implements UseCase<List<Launch>, Params>{
+class FilterPastLaunchs implements UseCase<List<Launch>, Params>{
   final LaunchRepository launchRepository;
 
-  GetPastLaunchs(this.launchRepository);
+  FilterPastLaunchs(this.launchRepository);
 
   @override
   Future<Either<Failure, List<Launch>>> call(Params params) async {
